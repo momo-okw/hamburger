@@ -1,0 +1,32 @@
+/**
+* Foundation
+* ========================== */
+li {
+  list-style: none;
+}
+
+/**
+* Layout
+* ========================== */
+.l-footer {
+  background-color: aquamarine;
+}
+
+.l-header {
+  background-color: aqua;
+}
+
+.l-main {
+  background-color: bisque;
+}
+
+.l-sidebar {
+  background-color: burlywood;
+  width: 20%;
+}
+
+.l-wrapper--all {
+  display: flex;
+  background-color: azure;
+}
+/*# sourceMappingURL=style.css.map */
