@@ -1,27 +1,21 @@
-/**
-* Foundation
-* ========================== */
 li {
   list-style: none;
 }
 
-/**
-* Layout
-* ========================== */
 .l-footer {
-  background-color: aquamarine;
+  background-color: #98826D;
 }
 
 .l-header {
-  background-color: aqua;
+  background-color: #FFF7EF;
 }
 
 .l-main {
-  background-color: bisque;
+  background-color: #FFFDFA;
 }
 
 .l-sidebar {
-  background-color: burlywood;
+  background-color: #F2EDE9;
   width: 20%;
 }
 
@@ -29,4 +23,11 @@ li {
   display: flex;
   background-color: azure;
 }
+
+/**
+* Foundation
+* ========================== */
+/**
+* Layout
+* ========================== */
 /*# sourceMappingURL=style.css.map */

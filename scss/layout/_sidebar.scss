@@ -1,5 +1,8 @@
+@use "../foundation/variables";
+
+
 .l-sidebar {
-    background-color: burlywood;
+    background-color: variables.$sidebarbg-color;
     width: 20%;
 
 }

@@ -1,3 +1,6 @@
+@use "../foundation/variables";
+
+
 .l-footer {
-    background-color: aquamarine;
+    background-color: variables.$footerbg-color;
 }

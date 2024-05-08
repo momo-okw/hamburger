@@ -1,3 +1,7 @@
+@use "../foundation/variables";
+
+
+
 .l-header {
-    background-color: aqua;
+    background-color: variables.$headerbg-color;
 }

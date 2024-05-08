@@ -1,3 +1,5 @@
+@use "../foundation/variables";
+
 .l-main {
-    background-color: bisque;
+    background-color: variables.$mainbg-color;
 }
