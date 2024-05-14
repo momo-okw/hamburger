@@ -1,0 +1,61 @@
+@use "../../foundation/variables";
+
+
+.p-header {
+    height: 217px;
+    padding-left: 65px;
+    display: flex;
+    justify-content: space-between;
+    color: variables.$gray;
+    align-items: center;
+
+    &__logo {
+      
+        
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: bold;
+        font-size: 50px;
+
+
+    }
+
+    &__searchForm {
+
+        &__keyword {
+            font-family: FontAwesome;
+            color: variables.$gray;
+            width: 396px;
+            height: 46px;
+            padding-left: 10px;
+            font-size: 20px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            background-color: #FFFFFF;
+           
+            
+
+        }
+
+        &__submit {
+            color: variables.$gray;
+            font-family: "M PLUS 1p", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 16px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 10px;
+            background-color: #EDE8E4;
+            padding: 11px 52px;
+            margin-left: 14px;
+            margin-right: 31px;
+            height: 46px;
+
+        }
+
+
+    }
+
+}
