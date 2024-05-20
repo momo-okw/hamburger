@@ -1,6 +1,7 @@
 /**
 * Foundation
 * ========================== */
+@use "foundation/base";
 @use "foundation/_reset";
 @use "foundation/_variables";
 
@@ -25,11 +26,10 @@
 
 @use "object/project/_p-footer";
 @use "object/project/_p-header";
-
+@use "object/project/_p-sidebar";
 
 
 /* Utility ------------ */
-
 
 
 

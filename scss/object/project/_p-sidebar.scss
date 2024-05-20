@@ -1,1 +1,17 @@
 @use "../../foundation/variables";
+
+.p-sidebar {
+    color: variables.$gray;
+
+
+    &__title {
+        font-family: "Roboto", sans-serif;
+
+        font-weight: 700;
+        font-size: 34px;
+
+    }
+
+
+
+}

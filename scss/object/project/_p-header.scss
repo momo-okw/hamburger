@@ -15,7 +15,7 @@
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-style: bold;
-        font-size: 50px;
+        font-size: 64px;
 
 
     }
@@ -32,7 +32,7 @@
             border-width: 1px;
             border-style: solid;
             border-radius: 10px;
-            background-color: #FFFFFF;
+            background-color: variables.$white;
            
             
 
@@ -40,7 +40,6 @@
 
         &__submit {
             color: variables.$gray;
-            font-family: "M PLUS 1p", sans-serif;
             font-weight: 400;
             font-style: normal;
             font-size: 16px;
