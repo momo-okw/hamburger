@@ -1,0 +1,21 @@
+@use "../../foundation/variables";
+
+.p-main {
+
+    &__mv {
+        background-image: url(../../../images/main.jpg);
+        height: 530px;
+        position: relative;
+
+    }
+
+    &__title {
+        color: variables.$white;
+        font-weight: bold;
+        font-size: 40px;
+        position: absolute;
+        left: 86px;
+        top: 234px;
+
+    }
+}

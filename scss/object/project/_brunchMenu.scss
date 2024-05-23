@@ -1,0 +1,20 @@
+@use "../../foundation/variables";
+
+.p-brunchMenu {
+    display: flex;
+    padding: 120px;
+
+    &__takeout {
+        background-image: url(../../../images/main_takeout.jpg);
+        height: auto;
+        width: 625px;
+        height: 1297px;
+    }
+
+    &__eatin {
+        background-image: url(../../../images/main_eatin.jpg);
+        width: 625px;
+        height: 1297px;
+    }
+
+}
