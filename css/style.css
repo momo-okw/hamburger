@@ -184,6 +184,7 @@ a {
 
 .p-access {
   position: relative;
+  display: block;
   background-image: url(../../../images/map.png);
   color: #FFFFFF;
   height: 650px;
@@ -191,8 +192,6 @@ a {
 .p-access::before {
   position: absolute;
   content: "";
-  left: 0;
-  top: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
