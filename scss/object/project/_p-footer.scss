@@ -3,11 +3,19 @@
 
 
 .p-footer {
-
     height: 150px;
-
     color: variables.$white;
 
-       
+    &__menu {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    &__copyright {
+        display: block;
+        margin: 30px;
+        text-align: center;
+    }
 }
 
