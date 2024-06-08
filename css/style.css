@@ -16,7 +16,8 @@ a {
 .l-footer {
   background-image: url(../../images/footer_bg.png);
   background-repeat: no-repeat;
-  width: auto;
+  background-size: cover;
+  width: 100vw;
 }
 
 .l-header {
@@ -125,6 +126,7 @@ a {
 .p-main__mv {
   background-image: url(../../../images/main.jpg);
   height: 530px;
+  background-size: cover;
   position: relative;
 }
 .p-main__title {
@@ -190,6 +192,7 @@ a {
   position: relative;
   display: block;
   background-image: url(../../../images/map.png);
+  background-size: cover;
   color: #FFFFFF;
   height: 650px;
 }
