@@ -12,6 +12,10 @@
         padding-top: 40px;
     }
 
+    &__menuList1::after {
+        content: "｜";
+    }
+
     &__copyright {
         display: block;
         margin: 30px;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "M PLUS 1p", sans-serif;
   box-sizing: border-box;
@@ -48,6 +49,9 @@ a {
   display: flex;
   justify-content: center;
   padding-top: 40px;
+}
+.p-footer__menuList1::after {
+  content: "｜";
 }
 .p-footer__copyright {
   display: block;
