@@ -1,9 +1,11 @@
 @use "../../foundation/variables";
 
 .p-brunchMenu {
-    display: flex;
     padding: 120px;
-  
+
+    &__ul {
+        display: flex;
+    }
 
     &__takeout {
         background-image: url(../../../images/main_takeout.jpg);
@@ -11,13 +13,17 @@
         height: auto;
         width: 625px;
         margin-right: 80px;
+        align-self: flex-end;
+
     }
 
     &__eatin {
         background-image: url(../../../images/main_eatin.jpg);
         background-size: cover;
         width: 625px;
-        height: auto;  
+        align-self: flex-end;
+
+ 
     }
 
     &__title {
@@ -41,8 +47,10 @@
     }
 
     &__allContent {
-        margin-top: 637px;
+        margin-top: 660px;
         margin-bottom: 20px;
+      
+
     }
 
     &__content {
@@ -63,4 +71,3 @@
     }
 
 }
-
