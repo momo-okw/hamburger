@@ -5,25 +5,28 @@
 
     &__ul {
         display: flex;
+        height: auto;
     }
 
-    &__takeout {
-        background-image: url(../../../images/main_takeout.jpg);
-        background-size: cover;
+    &__li {
+        position: relative;
         height: auto;
         width: 625px;
-        margin-right: 80px;
-        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 1200px;
+    }
 
+    &__takeout {  
+        background-image: url(../../../images/main_takeout.jpg);
+        background-size: cover;
+        margin-right: 80px;       
     }
 
     &__eatin {
         background-image: url(../../../images/main_eatin.jpg);
         background-size: cover;
-        width: 625px;
-        align-self: flex-end;
-
- 
     }
 
     &__title {
@@ -44,13 +47,11 @@
         width: 63px;
         height: 3px;
         margin-left: 25px;
+        top: 160px;
     }
 
     &__allContent {
-        margin-top: 660px;
-        margin-bottom: 20px;
-      
-
+        height: auto;
     }
 
     &__content {
@@ -58,16 +59,11 @@
         background-color: rgba(255, 255, 255, 0.8);
         margin: 20px;
         padding: 14px 20px;
-    
 
         &__title {
             font-style: bold;
             font-size: 24px;
             margin-bottom: 18px;
-
-
         }
-        
     }
-
 }

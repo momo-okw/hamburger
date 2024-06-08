@@ -143,20 +143,25 @@ a {
 }
 .p-brunchMenu__ul {
   display: flex;
+  height: auto;
+}
+.p-brunchMenu__li {
+  position: relative;
+  height: auto;
+  width: 625px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 1200px;
 }
 .p-brunchMenu__takeout {
   background-image: url(../../../images/main_takeout.jpg);
   background-size: cover;
-  height: auto;
-  width: 625px;
   margin-right: 80px;
-  align-self: flex-end;
 }
 .p-brunchMenu__eatin {
   background-image: url(../../../images/main_eatin.jpg);
   background-size: cover;
-  width: 625px;
-  align-self: flex-end;
 }
 .p-brunchMenu__title {
   color: #eaeaea;
@@ -174,10 +179,10 @@ a {
   width: 63px;
   height: 3px;
   margin-left: 25px;
+  top: 160px;
 }
 .p-brunchMenu__allContent {
-  margin-top: 660px;
-  margin-bottom: 20px;
+  height: auto;
 }
 .p-brunchMenu__content {
   color: #3C2A10;
