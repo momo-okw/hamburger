@@ -1,8 +1,21 @@
 @use "../foundation/variables";
+@use "../foundation/mixin";
 
 
 .l-sidebar {
+
     background-color: variables.$sidebarbg-color;
+    position: fixed;
+    right: -100%;
     width: 20%;
+
+
+    @include mixin.breakpoint(pc) {
+
+        position: static;
+        right: 0;
+        width: 20%;
+
+    }
 
 }

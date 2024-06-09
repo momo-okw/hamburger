@@ -1,22 +1,38 @@
 @use "../../foundation/variables";
+@use "../../foundation/mixin";
 
 .p-main {
 
     &__mv {
         background-image: url(../../../images/main.jpg);
-        height: 530px;
+        height: 285px;
         background-size: cover;
         position: relative;
+
+
+        @include mixin.breakpoint(pc) {
+            
+            height: 530px;
+            background-size: cover;
+            position: relative;
+
+        }
 
     }
 
     &__title {
+                  
         color: variables.$white;
         font-weight: bold;
-        font-size: 40px;
+        font-size: 36px;
         position: absolute;
         left: 86px;
-        top: 234px;
+        top: 122px;
+
+        @include mixin.breakpoint(pc) {
+            font-size: 40px;
+            top: 234px;
+        }
 
     }
 }

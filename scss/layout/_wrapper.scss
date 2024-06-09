@@ -1,3 +1,6 @@
+
+@use "../foundation/mixin";
+
 .l-wrapper--all {
     display: flex;
     background-color: azure;
@@ -5,6 +8,11 @@
 }
 
 .l-wrapper--main {
-    width: 80%;
+
+    width: 100%;
+
+    @include mixin.breakpoint(pc) {
+        width: 80%;
+    }
 
 }

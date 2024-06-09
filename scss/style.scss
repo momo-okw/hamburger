@@ -1,9 +1,10 @@
 /**
 * Foundation
 * ========================== */
-@use "foundation/base";
+@use "foundation/_base";
 @use "foundation/_reset";
 @use "foundation/_variables";
+@use "foundation/_mixin";
 
 /**
 * Layout
@@ -26,7 +27,7 @@
 @use "object/project/_p-sidebar";
 @use "object/project/_p-main";
 @use "object/project/_brunchMenu";
-@use "object/project/p-access";
+@use "object/project/_p-access";
 
 /* Utility ------------ */
 
