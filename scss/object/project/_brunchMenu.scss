@@ -3,7 +3,11 @@
 
 
 .p-brunchMenu {
-    padding: 120px;
+    padding: 40px;
+
+    @include mixin.breakpoint(pc) {
+        padding: 120px;
+    }
 
     &__ul {
         display: flex;
@@ -17,13 +21,21 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 1200px;
+        min-height: 680px;
+
+        @include mixin.breakpoint(pc) {
+            min-height: 1200px;
+        }
     }
 
     &__takeout {  
         background-image: url(../../../images/main_takeout.jpg);
         background-size: cover;
-        margin-right: 80px;       
+        margin-right: 40px;
+
+        @include mixin.breakpoint(pc) {
+            margin-right: 80px;
+        }       
     }
 
     &__eatin {
@@ -35,21 +47,31 @@
         color: #eaeaea;
         font-family: "Roboto", sans-serif;
         font-style: bold;
-        font-size: 80px;
+        font-size: 44px;
         margin-left: 11px;
         margin-top: 24px;
         margin-bottom: 38px;
 
+        @include mixin.breakpoint(pc) {
+            font-size: 80px;
+            margin-top: 14px;
+            margin-bottom: 23px;
+        }
     }
 
     &__underBar {
         position: absolute;
         display: block;
         background-color: #eaeaea;
-        width: 63px;
+        width: 36px;
         height: 3px;
         margin-left: 25px;
-        top: 160px;
+        top: 91px;
+
+        @include mixin.breakpoint(pc) {
+            width: 63px;
+            top: 160px;
+        }
     }
 
     &__allContent {
@@ -60,12 +82,28 @@
         color: variables.$brown;
         background-color: rgba(255, 255, 255, 0.8);
         margin: 20px;
-        padding: 14px 20px;
+        padding: 16px;
+
+        @include mixin.breakpoint(pc) {
+            padding: 14px 20px;
+        }
 
         &__title {
-            font-style: bold;
+            font-weight: bold;
             font-size: 24px;
-            margin-bottom: 18px;
+            margin-bottom: 16px;
+
+            @include mixin.breakpoint(pc) {
+                margin-bottom: 18px;
+            }
         }
+    }
+}
+
+dd {
+    font-size: 14px;
+
+    @include mixin.breakpoint(pc) {
+        font-size: 16px;
     }
 }
