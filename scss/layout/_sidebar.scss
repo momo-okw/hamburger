@@ -9,6 +9,11 @@
     right: -100%;
     width: 20%;
 
+    &.active {
+        right: 0;
+        
+    }
+
 
     @include mixin.breakpoint(pc) {
 
@@ -17,5 +22,7 @@
         width: 20%;
 
     }
+
+
 
 }
