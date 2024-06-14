@@ -6,14 +6,7 @@
 
 
     background-color: variables.$sidebarbg-color;
-    position: absolute;
-    right: -100%;
-    width: 45%;
 
-    &.active {
-        right: 0;
-        
-    }
 
 
     @include mixin.breakpoint(pc) {

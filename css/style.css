@@ -30,12 +30,6 @@ a {
 
 .l-sidebar {
   background-color: #F2EDE9;
-  position: absolute;
-  right: -100%;
-  width: 45%;
-}
-.l-sidebar.active {
-  right: 0;
 }
 @media (min-width: 960px) {
   .l-sidebar {
@@ -47,7 +41,6 @@ a {
 
 .l-wrapper--all {
   display: flex;
-  background-color: azure;
 }
 
 .l-wrapper--main {
@@ -132,10 +125,14 @@ a {
 
 .p-sidebar {
   color: #707070;
-  position: fixed;
-  overflow-y: auto;
-  height: 100vh;
-  z-index: 1000;
+  position: absolute;
+  left: 100%;
+  width: 45%;
+  height: auto;
+}
+.p-sidebar.active {
+  left: auto;
+  right: 0;
 }
 @media (min-width: 960px) {
   .p-sidebar {
@@ -149,11 +146,12 @@ a {
   font-weight: 700;
   font-size: 34px;
   margin: 20px 25px 0 0;
-  right: 0%;
-  position: fixed;
+  position: absolute;
+  right: 100%;
+  top: 0;
 }
 .p-sidebar__title.active {
-  color: #F2EDE9;
+  color: #FFF7EF;
 }
 .p-sidebar__title.active::before {
   position: absolute;
@@ -163,7 +161,7 @@ a {
   height: 3px;
   background-color: #707070;
   top: 40px;
-  right: 25px;
+  right: -100%;
   transform: rotate(45deg);
 }
 .p-sidebar__title.active::after {
@@ -174,7 +172,7 @@ a {
   height: 3px;
   background-color: #707070;
   top: 40px;
-  right: 25px;
+  right: -100%;
   transform: rotate(-45deg);
 }
 @media (min-width: 960px) {
@@ -202,13 +200,6 @@ a {
   font-size: 20px;
   margin-left: 66px;
   margin-bottom: 20px;
-}
-.p-sidebar__bg {
-  position: absolute;
-  height: 100vh;
-  width: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 10000000;
 }
 
 .p-main__mv {
