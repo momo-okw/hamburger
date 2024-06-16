@@ -125,14 +125,10 @@ a {
 
 .p-sidebar {
   color: #707070;
-  position: absolute;
-  left: 100%;
-  width: 45%;
-  height: auto;
-}
-.p-sidebar.active {
-  left: auto;
   right: 0;
+  width: 45%;
+  height: 0;
+  overflow: hidden;
 }
 @media (min-width: 960px) {
   .p-sidebar {
@@ -141,45 +137,55 @@ a {
     height: auto;
   }
 }
+.p-sidebar.active {
+  position: fixed;
+  height: auto;
+  right: 0;
+  z-index: 1000;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+}
 .p-sidebar__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 34px;
   margin: 20px 25px 0 0;
   position: absolute;
-  right: 100%;
+  right: 0;
   top: 0;
 }
 .p-sidebar__title.active {
   color: #FFF7EF;
-}
-.p-sidebar__title.active::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 45px;
-  height: 3px;
-  background-color: #707070;
-  top: 40px;
-  right: -100%;
-  transform: rotate(45deg);
-}
-.p-sidebar__title.active::after {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 45px;
-  height: 3px;
-  background-color: #707070;
-  top: 40px;
-  right: -100%;
-  transform: rotate(-45deg);
+  display: none;
 }
 @media (min-width: 960px) {
   .p-sidebar__title {
     position: static;
     margin: 84px 0 90px 46px;
   }
+}
+.p-sidebar__batsu.active::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #707070;
+  top: 50px;
+  right: 25px;
+  transform: rotate(45deg);
+}
+.p-sidebar__batsu.active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 45px;
+  height: 3px;
+  background-color: #707070;
+  top: 50px;
+  right: 25px;
+  transform: rotate(-45deg);
 }
 .p-sidebar__subTitle {
   font-weight: bold;
@@ -200,6 +206,25 @@ a {
   font-size: 20px;
   margin-left: 66px;
   margin-bottom: 20px;
+}
+.p-sidebar__bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.p-sidebar__bg.active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
 }
 
 .p-main__mv {
