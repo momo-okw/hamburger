@@ -140,11 +140,10 @@ a {
 }
 
 .p-sidebar {
+  position: fixed;
   color: #707070;
-  right: 0;
+  right: -45%;
   width: 45%;
-  height: 0;
-  overflow: hidden;
 }
 @media (min-width: 960px) {
   .p-sidebar {
@@ -168,7 +167,7 @@ a {
   font-size: 34px;
   margin: 20px 25px 0 0;
   position: absolute;
-  right: 0;
+  right: 100%;
   top: 0;
 }
 .p-sidebar__title.active {

@@ -2,11 +2,13 @@
 @use "../../foundation/mixin";
 
 .p-sidebar {
+    position: fixed;
     color: variables.$gray;
-    right: 0;
+    right: -45%;
     width: 45%;
-    height: 0;
-    overflow: hidden;
+    //overflow: auto;
+    //height: 0;
+    //overflow: hidden;
  
     @include mixin.breakpoint(pc) {
         padding-top: 0;
@@ -30,7 +32,7 @@
         font-size: 34px;
         margin: 20px 25px 0 0; 
         position: absolute;
-        right: 0;
+        right: 100%;
         top: 0;
 
      
