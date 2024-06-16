@@ -44,7 +44,12 @@ a {
 }
 
 .l-wrapper--main {
-  width: 100%;
+  width: auto;
+}
+@media (min-width: 600px) {
+  .l-wrapper--main {
+    width: auto;
+  }
 }
 @media (min-width: 960px) {
   .l-wrapper--main {
@@ -99,7 +104,7 @@ a {
 .p-header__searchForm__keyword {
   font-family: FontAwesome;
   color: #707070;
-  width: 396px;
+  width: 216px;
   height: 46px;
   padding-left: 10px;
   font-size: 20px;
@@ -107,6 +112,11 @@ a {
   border-style: solid;
   border-radius: 10px;
   background-color: #FFFFFF;
+}
+@media (min-width: 600px) {
+  .p-header__searchForm__keyword {
+    width: 396px;
+  }
 }
 .p-header__searchForm__submit {
   color: #707070;
@@ -117,10 +127,16 @@ a {
   border-style: solid;
   border-radius: 10px;
   background-color: #EDE8E4;
-  padding: 11px 52px;
+  padding: 11px 30px;
   margin-left: 14px;
-  margin-right: 31px;
+  margin-right: 0;
   height: 46px;
+}
+@media (min-width: 600px) {
+  .p-header__searchForm__submit {
+    padding: 11px 52px;
+    margin-right: 31px;
+  }
 }
 
 .p-sidebar {
@@ -231,7 +247,13 @@ a {
   background-image: url(../../../images/main.jpg);
   height: 285px;
   background-size: cover;
+  background-position: right -15px center;
   position: relative;
+}
+@media (min-width: 600px) {
+  .p-main__mv {
+    background-position: 0;
+  }
 }
 @media (min-width: 960px) {
   .p-main__mv {
@@ -245,8 +267,13 @@ a {
   font-weight: bold;
   font-size: 36px;
   position: absolute;
-  left: 86px;
+  left: 25px;
   top: 122px;
+}
+@media (min-width: 600px) {
+  .p-main__title {
+    left: 86px;
+  }
 }
 @media (min-width: 960px) {
   .p-main__title {
@@ -256,7 +283,12 @@ a {
 }
 
 .p-brunchMenu {
-  padding: 40px;
+  padding: 20px;
+}
+@media (min-width: 600px) {
+  .p-brunchMenu {
+    padding: 40px;
+  }
 }
 @media (min-width: 960px) {
   .p-brunchMenu {
@@ -265,16 +297,27 @@ a {
 }
 .p-brunchMenu__ul {
   display: flex;
+  flex-direction: column;
   height: auto;
+}
+@media (min-width: 600px) {
+  .p-brunchMenu__ul {
+    flex-direction: row;
+  }
 }
 .p-brunchMenu__li {
   position: relative;
   height: auto;
-  width: 625px;
+  width: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-height: 680px;
+}
+@media (min-width: 600px) {
+  .p-brunchMenu__li {
+    width: auto;
+  }
 }
 @media (min-width: 960px) {
   .p-brunchMenu__li {
@@ -284,7 +327,12 @@ a {
 .p-brunchMenu__takeout {
   background-image: url(../../../images/main_takeout.jpg);
   background-size: cover;
-  margin-right: 40px;
+  margin-right: 0;
+}
+@media (min-width: 600px) {
+  .p-brunchMenu__takeout {
+    margin-right: 40px;
+  }
 }
 @media (min-width: 960px) {
   .p-brunchMenu__takeout {

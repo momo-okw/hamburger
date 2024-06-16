@@ -3,7 +3,11 @@
 
 
 .p-brunchMenu {
-    padding: 40px;
+    padding: 20px;
+
+    @include mixin.breakpoint(tablet) {
+        padding: 40px;
+    }
 
     @include mixin.breakpoint(pc) {
         padding: 120px;
@@ -11,17 +15,28 @@
 
     &__ul {
         display: flex;
+        flex-direction: column;
         height: auto;
+
+        @include mixin.breakpoint(tablet) {
+            flex-direction: row;
+        }
+
     }
 
     &__li {
         position: relative;
         height: auto;
-        width: 625px;
+        width: auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         min-height: 680px;
+
+        @include mixin.breakpoint(tablet) {
+            width: auto;
+
+        }
 
         @include mixin.breakpoint(pc) {
             min-height: 1200px;
@@ -31,7 +46,11 @@
     &__takeout {  
         background-image: url(../../../images/main_takeout.jpg);
         background-size: cover;
-        margin-right: 40px;
+        margin-right: 0;
+
+        @include mixin.breakpoint(tablet) {
+            margin-right: 40px;
+        }
 
         @include mixin.breakpoint(pc) {
             margin-right: 80px;

@@ -11,7 +11,11 @@
 .l-wrapper--main {
 
 
-    width: 100%;
+    width: auto;
+
+    @include mixin.breakpoint(tablet) {
+        width: auto;
+    }
 
     @include mixin.breakpoint(pc) {
         width: 80%;

@@ -7,7 +7,13 @@
         background-image: url(../../../images/main.jpg);
         height: 285px;
         background-size: cover;
+        background-position: right -15px center; //右から15pxで、縦の中央
         position: relative;
+
+        @include mixin.breakpoint(tablet) {
+            background-position: 0;
+            
+        }
 
 
         @include mixin.breakpoint(pc) {
@@ -26,8 +32,13 @@
         font-weight: bold;
         font-size: 36px;
         position: absolute;
-        left: 86px;
+        left: 25px;
         top: 122px;
+
+        @include mixin.breakpoint(tablet) {
+            left: 86px;
+
+        }
 
         @include mixin.breakpoint(pc) {
             font-size: 40px;

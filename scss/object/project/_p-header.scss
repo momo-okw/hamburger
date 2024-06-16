@@ -9,15 +9,10 @@
     color: variables.$gray;
     align-items: center;
 
-
-
     @include mixin.breakpoint(pc) {
-        padding-left: 65px;
-      
+        padding-left: 65px;     
         flex-direction: row;
         justify-content: space-between;
-      
-
     }
 
     &__logo {
@@ -40,7 +35,7 @@
         &__keyword {
             font-family: FontAwesome;
             color: variables.$gray;
-            width: 396px;
+            width: 216px;
             height: 46px;
             padding-left: 10px;
             font-size: 20px;
@@ -48,9 +43,10 @@
             border-style: solid;
             border-radius: 10px;
             background-color: variables.$white;
-           
-            
 
+            @include mixin.breakpoint(tablet) {
+                width: 396px;
+            }
         }
 
         &__submit {
@@ -62,10 +58,16 @@
             border-style: solid;
             border-radius: 10px;
             background-color: #EDE8E4;
-            padding: 11px 52px;
+            padding: 11px 30px;
             margin-left: 14px;
-            margin-right: 31px;
+            margin-right: 0;
             height: 46px;
+        
+            @include mixin.breakpoint(tablet) {
+                padding: 11px 52px;
+                margin-right: 31px;
+            }
+
 
         }
 
