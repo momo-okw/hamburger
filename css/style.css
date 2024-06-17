@@ -41,6 +41,8 @@ a {
 
 .l-wrapper--all {
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 
 .l-wrapper--main {
@@ -48,7 +50,7 @@ a {
 }
 @media (min-width: 600px) {
   .l-wrapper--main {
-    width: auto;
+    width: 100vw;
   }
 }
 @media (min-width: 960px) {
@@ -140,16 +142,24 @@ a {
 }
 
 .p-sidebar {
-  position: fixed;
+  position: absolute;
   color: #707070;
-  right: -45%;
-  width: 45%;
+  right: -90%;
+  width: 90%;
+  transition: all 0.6s;
+}
+@media (min-width: 600px) {
+  .p-sidebar {
+    right: -45%;
+    width: 45%;
+  }
 }
 @media (min-width: 960px) {
   .p-sidebar {
     padding-top: 0;
     position: static;
     height: auto;
+    width: 20%;
   }
 }
 .p-sidebar.active {
@@ -164,15 +174,23 @@ a {
 .p-sidebar__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 34px;
+  font-size: 20px;
   margin: 20px 25px 0 0;
-  position: absolute;
-  right: 100%;
+  position: relative;
+  right: 20%;
   top: 0;
+}
+@media (min-width: 600px) {
+  .p-sidebar__title {
+    font-size: 34px;
+    right: 30%;
+  }
 }
 .p-sidebar__title.active {
   color: #FFF7EF;
   display: none;
+  transition-property: display;
+  transition-delay: 1s;
 }
 @media (min-width: 960px) {
   .p-sidebar__title {
@@ -233,13 +251,14 @@ a {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.5s;
+  transition: opacity 0.6s;
 }
 .p-sidebar__bg.active {
   width: 100%;
   height: 100%;
   opacity: 1;
   z-index: 1;
+  transition: opacity 1s;
 }
 
 .p-main__mv {
@@ -282,7 +301,7 @@ a {
 }
 
 .p-brunchMenu {
-  padding: 20px;
+  padding: 20px 20px 40px 20px;
 }
 @media (min-width: 600px) {
   .p-brunchMenu {
@@ -327,10 +346,12 @@ a {
   background-image: url(../../../images/main_takeout.jpg);
   background-size: cover;
   margin-right: 0;
+  margin-bottom: 20px;
 }
 @media (min-width: 600px) {
   .p-brunchMenu__takeout {
     margin-right: 40px;
+    margin-bottom: 0;
   }
 }
 @media (min-width: 960px) {
@@ -419,9 +440,14 @@ dd {
   position: absolute;
   content: "";
   width: 100%;
-  height: 100%;
+  height: 60%;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 2;
+}
+@media (min-width: 600px) {
+  .p-access::before {
+    height: 100%;
+  }
 }
 .p-access__bg {
   padding: 42px;

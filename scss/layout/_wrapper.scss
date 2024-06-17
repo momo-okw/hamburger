@@ -3,8 +3,8 @@
 
 .l-wrapper--all {
     display: flex;
-    
-   
+    position: relative;
+    overflow: hidden;
  
 }
 
@@ -12,9 +12,10 @@
 
 
     width: auto;
+  
 
     @include mixin.breakpoint(tablet) {
-        width: auto;
+        width: 100vw;
     }
 
     @include mixin.breakpoint(pc) {
