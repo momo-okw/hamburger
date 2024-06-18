@@ -165,7 +165,6 @@ a {
     position: static;
     height: auto;
     width: 20%;
-    overflow: hidden;
   }
 }
 .p-sidebar.active {

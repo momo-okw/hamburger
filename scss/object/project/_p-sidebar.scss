@@ -19,7 +19,6 @@
         position: static;
         height: auto;
         width: 20%;
-        overflow: hidden;
     }
 
     &.active {
@@ -39,7 +38,6 @@
         margin: 20px 25px 0 0; 
         position: relative;
         right: 15%;
-       
         top: 0;
 
         @include mixin.breakpoint(tablet) {
