@@ -21,21 +21,26 @@
         font-style: bold;
         font-size: 40px;
         margin: 40px;
-
       
         @include mixin.breakpoint(pc) {
             font-size: 64px;
         }
-
-
     }
 
     &__searchForm {
+        width: 100%;
+        max-width: 322px;
+        display: flex;
+        justify-content: center;
+
+        @include mixin.breakpoint(tablet) {
+            max-width: 546px;
+        }
 
         &__keyword {
             font-family: FontAwesome;
             color: variables.$gray;
-            width: 216px;
+            width: 73%;
             height: 46px;
             padding-left: 10px;
             font-size: 20px;
@@ -43,10 +48,6 @@
             border-style: solid;
             border-radius: 10px;
             background-color: variables.$white;
-
-            @include mixin.breakpoint(tablet) {
-                width: 396px;
-            }
         }
 
         &__submit {
@@ -58,20 +59,14 @@
             border-style: solid;
             border-radius: 10px;
             background-color: #EDE8E4;
-            padding: 11px 30px;
             margin-left: 14px;
             margin-right: 0;
             height: 46px;
+            width: 25%;
         
-            @include mixin.breakpoint(tablet) {
-                padding: 11px 52px;
+            @include mixin.breakpoint(pc) {             
                 margin-right: 31px;
             }
-
-
         }
-
-
     }
-
 }

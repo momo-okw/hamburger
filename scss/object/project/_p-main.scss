@@ -7,23 +7,15 @@
         background-image: url(../../../images/main.jpg);
         height: 285px;
         background-size: cover;
-        background-position: right -15px center; //右から15pxで、縦の中央
+        background-position: center; 
         position: relative;
-
-        @include mixin.breakpoint(tablet) {
-            background-position: 0;
-            
-        }
-
 
         @include mixin.breakpoint(pc) {
             
             height: 530px;
             background-size: cover;
             position: relative;
-
         }
-
     }
 
     &__title {
