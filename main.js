@@ -1,5 +1,15 @@
 $(function() {
 
+    var timer = false;
+    $(window).resize(function() {
+        if (timer !== false) {
+            clearTimeout(timer);
+        }
+        timer = setTimeout(function() {
+        location.reload();
+        }, 200);
+    });
+
    
         if (window.matchMedia("(max-width: 960px)").matches) {
 
@@ -8,20 +18,17 @@ $(function() {
                 $(".p-sidebar__title").addClass('active');
                 $(".p-sidebar__batsu").addClass('active');
                 $(".p-sidebar__bg").addClass('active');
-                console.log("aa")
+                
             });
             $(".p-sidebar__batsu").on("click",function () {
                 $(".p-sidebar").removeClass('active');
                 $(".p-sidebar__title").removeClass('active');
                 $(".p-sidebar__batsu").removeClass('active');
                 $(".p-sidebar__bg").removeClass('active');
-                console.log("aa")
+                
             });
 
 
-        } else {
-            //何もしない
-        
         }
     });
 

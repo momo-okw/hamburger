@@ -185,6 +185,14 @@ a {
   right: 15%;
   top: 0;
 }
+.p-sidebar__title:hover {
+  cursor: pointer;
+}
+@media (min-width: 960px) {
+  .p-sidebar__title:hover {
+    cursor: auto;
+  }
+}
 @media (min-width: 600px) {
   .p-sidebar__title {
     font-size: 34px;

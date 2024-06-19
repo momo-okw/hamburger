@@ -40,6 +40,14 @@
         right: 15%;
         top: 0;
 
+        &:hover {
+            cursor: pointer;
+
+            @include mixin.breakpoint(pc) {
+                cursor: auto;
+            } 
+        }
+
         @include mixin.breakpoint(tablet) {
             font-size: 34px;
             right: 30%;
