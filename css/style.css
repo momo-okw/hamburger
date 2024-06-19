@@ -50,13 +50,16 @@ a {
 }
 @media (min-width: 600px) {
   .l-wrapper--main {
-    width: 100vw;
+    width: 100%;
   }
 }
 @media (min-width: 960px) {
   .l-wrapper--main {
     width: 80%;
   }
+}
+.l-wrapper--main.active {
+  position: fixed;
 }
 
 .p-footer {

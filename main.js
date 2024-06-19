@@ -18,6 +18,7 @@ $(function() {
                 $(".p-sidebar__title").addClass('active');
                 $(".p-sidebar__batsu").addClass('active');
                 $(".p-sidebar__bg").addClass('active');
+                $(".l-wrapper--main").addClass('active');
                 
             });
             $(".p-sidebar__batsu").on("click",function () {
@@ -25,6 +26,7 @@ $(function() {
                 $(".p-sidebar__title").removeClass('active');
                 $(".p-sidebar__batsu").removeClass('active');
                 $(".p-sidebar__bg").removeClass('active');
+                $(".l-wrapper--main").removeClass('active');
                 
             });
 

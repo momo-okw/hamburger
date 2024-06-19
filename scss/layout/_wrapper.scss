@@ -15,11 +15,15 @@
   
 
     @include mixin.breakpoint(tablet) {
-        width: 100vw;
+        width: 100%;
     }
 
     @include mixin.breakpoint(pc) {
         width: 80%;
+    }
+
+    &.active {   
+            position: fixed;        
     }
 
 }
