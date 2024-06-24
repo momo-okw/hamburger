@@ -214,6 +214,20 @@ a {
     margin: 84px 0 90px 46px;
   }
 }
+.p-sidebar__batsuwrapper {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+}
+.p-sidebar__batsuwrapper:hover {
+  cursor: pointer;
+}
+@media (min-width: 960px) {
+  .p-sidebar__batsuwrapper:hover {
+    cursor: auto;
+  }
+}
 .p-sidebar__batsu.active::before {
   position: absolute;
   content: "";

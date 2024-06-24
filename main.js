@@ -21,7 +21,7 @@ $(function() {
                 $(".l-wrapper--main").addClass('active');
                 
             });
-            $(".p-sidebar__batsu").on("click",function () {
+            $(".p-sidebar__batsuwrapper").on("click",function () {
                 $(".p-sidebar").removeClass('active');
                 $(".p-sidebar__title").removeClass('active');
                 $(".p-sidebar__batsu").removeClass('active');

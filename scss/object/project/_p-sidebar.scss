@@ -67,8 +67,23 @@
     }
 
     &__batsu {
-        &.active {
+        &wrapper {
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            right: 0;
 
+            &:hover {
+                cursor: pointer;
+                
+                @include mixin.breakpoint(pc) {
+                    cursor: auto;
+            }
+        }
+ 
+        }
+
+        &.active {
             &::before {
                 position: absolute;
                 content: "";
