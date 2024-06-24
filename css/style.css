@@ -358,7 +358,7 @@ a {
 }
 @media (min-width: 600px) {
   .p-brunchMenu__li {
-    width: auto;
+    width: 100%;
   }
 }
 @media (min-width: 960px) {

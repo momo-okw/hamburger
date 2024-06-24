@@ -34,7 +34,7 @@
         min-height: 680px;
 
         @include mixin.breakpoint(tablet) {
-            width: auto;
+            width: 100%;
 
         }
 
