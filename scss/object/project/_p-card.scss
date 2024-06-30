@@ -1,0 +1,101 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+.p-card {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px 20px 20px;
+    height: auto;
+    min-height: 355px;
+
+    @include mixin.breakpoint(tablet) {
+        flex-direction: row;
+        margin: 0 40px 20px 40px;
+
+    }
+
+    @include mixin.breakpoint(pc) {
+        height: auto;
+        margin: 0 100px 30px 100px;
+
+    }
+
+
+    &__caption {
+        
+        padding: 30px 60px 40px 35px;
+        color: variables.$white;
+        background-color: variables.$brown;
+        
+
+        @include mixin.breakpoint (tablet) {
+            width: 50%;
+
+        }
+
+        @include mixin.breakpoint(pc) {
+            padding: 56px 104px 60px 63px;
+            
+        }
+
+        &__title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+
+            @include mixin.breakpoint(pc) {
+                font-size: 36px;
+                margin-bottom: 44px;
+
+            }
+        }
+
+        &__subTitle {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 7px;
+
+            @include mixin.breakpoint(pc) {
+                font-size: 24px;
+                margin-bottom: 13px;
+
+            }
+        }
+
+        &__content {
+            font-size: 16px;
+            margin-bottom: 45px;
+            font-weight: normal;
+
+            @include mixin.breakpoint(pc) {
+                 margin-bottom: 60px;
+
+            }
+        }
+
+        &__btn {
+            background-color: variables.$white;
+            color: variables.$gray;
+            font-size: 16px;
+            height: 43px;
+            border-radius: 50px;
+            
+            display: block;
+            margin: auto;
+            min-width: 170px;
+            width: 50%;
+
+            @include mixin.breakpoint(pc) {
+                height: 76px;
+            }
+        }
+    }
+}
+
+img {
+    width: 100%;
+
+    @include mixin.breakpoint(tablet) {
+        width: 50%;
+    }
+}

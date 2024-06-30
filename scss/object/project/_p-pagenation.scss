@@ -1,0 +1,97 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+.p-pagenation {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: variables.$gray;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+
+
+    @include mixin.breakpoint(tablet) {
+        
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        color: variables.$gray;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        margin-bottom: 70px;
+
+    }
+
+
+
+
+    &__list {
+        display: block;
+        text-align: center;
+        margin-right: 15px;
+      
+        &__number {
+            display: none;
+        
+
+            @include mixin.breakpoint(tablet) {
+                display: block;
+                height: 35px;
+                width: 35px;
+                border: 1px solid variables.$gray;
+                padding: 6.5px;
+
+            }
+
+            &1 {
+                background-color: variables.$brown;
+                color: variables.$white;
+            }
+
+        }
+    }
+
+    &__page {
+        display: none; 
+
+        @include mixin.breakpoint(tablet) {
+            display: block;
+        }
+    }
+
+    &__pre {
+        &::after {
+            font-family: "M PLUS 1p", sans-serif;
+            content: "前へ";
+
+            @include mixin.breakpoint(tablet) {
+                display: none;
+            }
+    
+        }
+    }
+
+    &__post {
+        margin-right: 0;
+        &::before {
+            font-family: "M PLUS 1p", sans-serif;
+            content: "次へ";
+            
+            @include mixin.breakpoint(tablet) {
+                display: none;
+            }
+        }
+
+    }
+
+
+
+}
+
