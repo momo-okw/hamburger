@@ -1,0 +1,23 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+
+.p-htag {
+
+    &__h {
+        margin-bottom: 25px;
+        font-weight: bold;
+
+        @include mixin.breakpoint(tablet) {
+            margin-bottom: 67px;
+        }
+    }
+
+    &__p {
+        margin-bottom: 25px;
+
+        @include mixin.breakpoint(tablet) {
+            margin-bottom: 67px;
+        }
+    }
+}

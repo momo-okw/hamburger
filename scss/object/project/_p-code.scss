@@ -1,0 +1,12 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+.p-code {
+    background-color: #f5f5f5;
+    margin-bottom: 30px;
+
+
+    @include mixin.breakpoint (tablet) {
+        margin-bottom: 60px;
+    }
+}

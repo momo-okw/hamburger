@@ -1,0 +1,43 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+.p-list {
+    margin-left: 0px ;
+    margin-bottom: 30px;
+
+    @include mixin.breakpoint (tablet) {
+        margin-left: 50px ;
+        margin-bottom: 60px;
+
+    }
+
+
+    &__ol {
+   
+        margin-bottom: 17px;
+
+        &-2 {
+            margin-left: 20px;
+        }
+
+        &-3 {
+            margin-bottom: 40px;
+        }
+
+        &__listitem {
+            list-style-type: decimal;
+            margin-left: 20px;
+        }
+       
+    }
+
+    &__ul {
+     
+        margin-bottom: 17px;
+
+        &-2{
+            margin-left: 20px;
+        }
+
+    }
+}

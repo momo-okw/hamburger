@@ -85,15 +85,16 @@
             }
         }
     }
-}
 
-img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    object-position: 0 50%;
+    &__img {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: 0 50%;
+    
+         @include mixin.breakpoint(tablet) {
+            width: 50%;
+         }
 
-     @include mixin.breakpoint(tablet) {
-        width: 50%;
-     }
+    }
 }

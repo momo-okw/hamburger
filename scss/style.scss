@@ -19,6 +19,7 @@
 * ========================== */
 
 /* Component ------------ */
+@use "object/component/c-wrap";
 
 /* Project ------------ */ 
 
@@ -31,6 +32,17 @@
 @use "object/project/_p-archive";
 @use "object/project/_p-card";
 @use "object/project/_p-pagenation";
+@use "object/project/_p-single";
+@use "object/project/p-htag";
+@use "object/project/p-blockquote";
+@use "object/project/p-img";
+@use "object/project/p-list";
+@use "object/project/p-code";
+@use "object/project/p-table";
+@use "object/project/p-btn";
+
+
+
 
 /* Utility ------------ */
 

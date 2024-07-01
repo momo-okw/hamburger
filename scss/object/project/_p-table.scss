@@ -1,0 +1,23 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+.p-table {
+  //  border: 1px solid #707070 ;
+    width: 100%;
+    background-color: variables.$white;
+    border-collapse:  collapse; 
+    margin-bottom: 60px;
+
+    &__td1 {
+        width: 40%;
+
+        @include mixin.breakpoint(tablet) {
+            width: 30%;
+        }
+    }
+}
+
+td {
+    border: 1px solid #707070 ;
+    padding: 30px 0 30px 30px;
+}
