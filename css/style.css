@@ -615,7 +615,6 @@ span {
   display: flex;
   flex-direction: column;
   margin: 0 20px 20px 20px;
-  height: auto;
   min-height: 355px;
 }
 @media (min-width: 600px) {
@@ -626,7 +625,6 @@ span {
 }
 @media (min-width: 960px) {
   .p-card {
-    height: auto;
     margin: 0 100px 30px 100px;
   }
 }
@@ -696,6 +694,11 @@ span {
 
 img {
   width: 100%;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 50%;
+     object-position: 0 50%;
 }
 @media (min-width: 600px) {
   img {
