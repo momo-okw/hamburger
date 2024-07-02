@@ -1,0 +1,20 @@
+@use "../../foundation/variables";
+@use "../../foundation/mixin";
+
+.p-page {
+    &__mv {
+        background-image: url(../../../images/page_mv.jpg);
+        height: 225px;
+        background-size: cover;
+        background-position: center; 
+        position: relative;
+
+        @include mixin.breakpoint(tablet) {
+            
+            height: 500px;
+            background-size: cover;
+            position: relative;
+        }
+
+    }
+}

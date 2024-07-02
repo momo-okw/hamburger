@@ -852,7 +852,6 @@ span {
   background-color: #F5F5F5;
   padding: 30px 20px;
   margin-bottom: 30px;
-  text-align: right;
 }
 @media (min-width: 600px) {
   .p-blockquote {
@@ -1045,6 +1044,21 @@ td {
     height: 104px;
     width: 429px;
     margin-bottom: 60px;
+  }
+}
+
+.p-page__mv {
+  background-image: url(../../../images/page_mv.jpg);
+  height: 225px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media (min-width: 600px) {
+  .p-page__mv {
+    height: 500px;
+    background-size: cover;
+    position: relative;
   }
 }
 
